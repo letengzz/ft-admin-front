@@ -1,4 +1,5 @@
-// import { ElementPlusResolver, AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+// import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 // import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
 
@@ -10,7 +11,7 @@ import Components from 'unplugin-vue-components/vite'
 const useComponents = () => {
   return Components({
     resolvers: [
-      //   ElementPlusResolver(), // Element Plus组件库解析器（已禁用）
+        ElementPlusResolver(), // Element Plus组件库解析器（已禁用）
       //   AntDesignVueResolver({
       //     resolveIcons: true, // 自动导入图标组件
       //     importStyle: false, // 不导入CSS，使用CSS-in-JS方式

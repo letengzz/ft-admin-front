@@ -1,7 +1,8 @@
 // 此插件用于自动导入API和组件
 // 可以减少手动import语句，提高开发效率，并提供类型提示
 import AutoImport from 'unplugin-auto-import/vite'
-// import { ElementPlusResolver, AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+// import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 // import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 
 /**
@@ -14,7 +15,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 const useAutoImport = () => {
   return AutoImport({
     resolvers: [
-      //   ElementPlusResolver(), // 自动导入Element Plus组件
+        ElementPlusResolver(), // 自动导入Element Plus组件
       //   AntDesignVueResolver(), // 自动导入Ant Design Vue组件
       //   TDesignResolver({
       //     library: 'vue-next',
