@@ -32,3 +32,4 @@ playwright-report/
 
 types/auto-imports.d.ts
 types/components.d.ts
+/pnpm-lock.yaml
