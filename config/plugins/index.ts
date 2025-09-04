@@ -6,6 +6,7 @@ import useCompress from './compress'
 import useAutoImport from './autoImport' // 自动导入API
 import useChecker from './checker' // 代码检查工具
 import useComponents from './component' // 组件自动注册
+import { UnoCSSPlugin } from './unocss'
 /**
  * @description: vite插件列表
  */
@@ -17,7 +18,7 @@ const usePlugins = (mode: string, env: Record<string, string>) => {
   ]
   plugins.push(useAutoImport())
   plugins.push(useComponents())
-
+  plugins.push(UnoCSSPlugin())
   if (isDev) {
     plugins.push(useDevTools())
     plugins.push(useChecker())
